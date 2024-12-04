@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Sesi | LOGIN</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="#"><img src="sesilogo.png" alt="logo"></a>
+    </nav>
+    <div class="form-wrapper">
+        <h2>Cadastre-se</h2>
+        <form id="CadastroUsuarioForm">
+         
+            <div class="form-control">
+                <input type="text" id="nome" name="nome" required>
+                <label for="nome" >Nome</label>
+            </div>
+            <div class="form-control">
+                <input type="text" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="form-control">
+                <input type="text" id="CPF" name="CPF" required>
+                <label for="CPF">CPF</label>
+            </div>
+
+             <div class="form-control">
+                <input type="text" id="telefone" name="telefone" required>
+                <label for="telefone" >Telefone</label>
+            </div>
+
+            <div class="form-control">
+                <input type="password" id="senha" name="senha" required>
+                <label for="senha" >Senha</label>
+            </div>
+            <div>
+                <div class="form-container">
+                <label for="id_tipo">Tipo de Usuário:</label>
+                <select id="id_tipo" name="id_tipo" required>
+                    <option value="">Selecione um tipo</option>
+                    <!-- Exemplo de opções de Tipo de Usuário, estas opções podem ser dinamicamente geradas do banco de dados -->
+                    <option value="1">Administrador</option>
+                    <option value="2">Aluno</option>
+                    <option value="3">Bibliotecario</option>
+                </select>
+            </div>
+            </div>
+
+            
+            <button type="submit">Cadastrar</button>
+            <div class="form-help"> 
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Lembrar login</label>
+               
+                </div>
+                <a href="https://web.whatsapp.com/send?text=www.sesisp.org.br/educacao/bibliotecas-escolares">Ajuda?</a>
+            </div>
+        </form>
+		<h2>Lista de Livros</h2>
+		<ul id="listaLivros"></ul><br>
+        <p>Já possui cadastro?<a href="cadastro.html">Entrar aqui</a></p>
+        <small>
+            <a href="https://www.sesisp.org.br/educacao/bibliotecas-escolaresx">Saiba mais.</a>
+        </small>
+    </div>
+	<script src="./js/cadastro.js"></script>
+</body>
+</html>
